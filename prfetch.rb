@@ -22,7 +22,7 @@ def create_octokit_client
 end
 
 def prepare_directory(repo, owner, pr_number, author_username)
-  folder_name = "#{repo}_#{owner}_#{author_username}_#{pr_number}"
+  folder_name = "download/#{repo}_#{owner}_#{author_username}_#{pr_number}"
   FileUtils.mkdir_p(folder_name)
   folder_name
 end
